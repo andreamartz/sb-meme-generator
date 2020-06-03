@@ -144,7 +144,7 @@ label,
 .modal {
   /* appearance */
   background-color: var(--black);
-  opacity: 50%;
+  opacity: 0%;
   /* dimensions */
   height: calc(100% - 14px);
   width: 100%;
@@ -154,16 +154,8 @@ label,
   left: 0;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 .modal:hover {
-  visibility: visible;
-}
-
-.meme-container:hover {
-  visibility: visible;
+  opacity: 50%;
 }
 
 .x-icon-container {
