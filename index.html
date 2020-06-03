@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Make Your Own Memes</title>
+  </head>
+  <body>
+    <header>
+      <div class="page-titles">
+        <h1>Make Your Own Memes</h1>
+        <h2>Enter the information below to start creating memes!</h2>
+      </div>
+    </header>
+    <!-- FORM -->
+    <section class="form-section">
+      <form action="">
+        <div class="flex-container">
+          <label for="url">Image URL</label>
+          <input
+            type="url"
+            id="url"
+            class="input"
+            placeholder="What's the URL for your meme image?"
+          />
+        </div>
+        <div class="flex-container">
+          <label for="top-text">Text on top</label>
+          <input
+            type="text"
+            id="top-text"
+            class="input"
+            placeholder="(Optional) What text do you want at the top of the meme?"
+          />
+        </div>
+        <div class="flex-container">
+          <label for="bottom-text">Text on bottom</label>
+          <input
+            type="text"
+            id="bottom-text"
+            class="input"
+            placeholder="(Optional) What text do you want at the bottom of the meme?"
+          />
+        </div>
+        <div class="flex-container-submit">
+          <input type="submit" value="Add Meme" id="submit" />
+        </div>
+      </form>
+    </section>
+
+    <!-- MEMES -->
+    <section class="meme-flex-container meme-section"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

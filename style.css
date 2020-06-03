@@ -1,0 +1,180 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --gray: #eee;
+  --white: #fff;
+  --black: #000;
+  --blue: #29f;
+}
+
+header {
+  text-align: center;
+}
+
+.page-titles {
+  padding: 4rem 0 2rem 0;
+}
+
+h2 {
+  margin-top: 0.5em;
+}
+
+/* HEADER and FORM */
+
+header,
+.form-section {
+  background-color: var(--gray);
+}
+
+.form-section {
+  padding-bottom: 2rem;
+}
+
+.flex-container,
+.flex-container-submit {
+  padding: 0.25rem 0;
+}
+
+.flex-container-submit {
+  justify-content: flex-end;
+}
+
+form {
+  margin: 0 auto;
+  width: 75%;
+}
+
+label,
+.input {
+  line-height: 200%;
+  display: block;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+}
+
+#submit {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 10px;
+  flex: 0 0 5rem;
+  padding: 0.5em 1em;
+}
+
+@media screen and (min-width: 900px) {
+  div.flex-container {
+    justify-content: space-between;
+  }
+
+  .flex-container,
+  .flex-container-submit {
+    display: flex;
+    flex-direction: row wrap;
+    padding: 0.25rem 0;
+  }
+
+  label {
+    flex: 1 1 10rem;
+  }
+
+  .input {
+    flex: 5 1 auto;
+    padding-left: 5px;
+  }
+
+  label,
+  .input {
+    display: block;
+    line-height: 200%;
+  }
+}
+
+/* MEME "GRID" */
+.meme-flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 75%;
+}
+
+.meme-container {
+  display: inline-block;
+  flex: 1 1 auto;
+  font-size: 2rem;
+  max-width: 40%;
+  position: relative;
+  text-align: center;
+}
+
+.meme-image,
+.modal {
+  margin: 7px;
+  max-width: calc(100% - 14px);
+}
+
+.meme-text {
+  color: var(--white);
+  font-size: 2rem;
+  position: absolute;
+  text-shadow: 3px 3px 0 var(--black), -1px -1px 0 var(--black),
+    1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
+  transform: translate(-50%, 0);
+  width: calc(100% - 14px);
+}
+
+.meme-text-top {
+  top: 15px;
+  left: 50%;
+}
+
+.meme-text-bottom {
+  bottom: 20px;
+  left: 50%;
+}
+
+.modal {
+  /* appearance */
+  background-color: var(--black);
+  opacity: 50%;
+  /* dimensions */
+  height: calc(100% - 14px);
+  width: 100%;
+  /* positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.modal:hover {
+  visibility: visible;
+}
+
+.meme-container:hover {
+  visibility: visible;
+}
+
+.x-icon-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.x-icon {
+  display: block;
+  max-height: 70%;
+  max-width: 70%;
+}
