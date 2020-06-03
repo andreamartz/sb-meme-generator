@@ -81,26 +81,6 @@ document.addEventListener("submit", function (e) {
   form.reset();
 });
 
-// MOUSEOVER to add modal
-memeSection.addEventListener("mouseover", function (e) {
-  const target = e.target;
-  let modal;
-  if (target.classList.contains("meme-container")) {
-    modal = target.querySelector(".modal");
-  } else return;
-  modal.classList.remove("hidden");
-});
-
-// MOUSEOUT to remove modal
-memeSection.addEventListener("mouseout", function (e) {
-  const target = e.target;
-  let modal;
-  if (target.classList.contains("meme-container")) {
-    modal = target.querySelector(".modal");
-  } else return;
-  modal.classList.add("hidden");
-});
-
 // CLICK to remove meme
 document.addEventListener("click", function (e) {
   const target = e.target;
